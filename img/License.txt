@@ -1,0 +1,5 @@
+IMAGE LICENSE
+AUTHOR / AUTOR : nlpke (nlpke.github.io)
+YEAR / JAHR : 2017
+LICENSE / LIZENZ : CC-BY-SA 4.0
+LICENSE-TERMS / LIZENZBESTIMMUNGEN : http://creativecommons.org/licenses/by-sa/4.0/
