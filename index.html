@@ -7,41 +7,63 @@
 		<meta charset="utf-8">
 	</head>
 	<body>
-		<header class="w3-display-container w3-content" style="max-width: 1500px">
-			<img class="w3-image" src="img/berlin.jpg" alt="BERLIN" width="1500" height="600">
-			<div class="w3-display-topmiddle">
-	    		<h1>NLPKE</h1>
-	 		</div>
-		    <ul class="w3-navbar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
-			    <li><a href="#">Home</a></li>
-			    <li><a href="#projects">Projekte</a></li>
-			    <li><a href="https://github.com/nlpke">Github</a></li>
-			</ul>
-		</header>
-		<div class="w3-row">
-			<div class="w3-col s12">
-				<h1 style="text-align:center;">IoT-Box (Jugend-Forscht 2017)</h1>
-				<hr>
-				<p>Informationen zur IoT-Box folgen in naher Zukunft (Detaillierte Informationen nach dem Jugend-Forscht Landeswettbewerb im April)</p>
-				<p>Für Nachfragen bin ich unter der (unten auf der Seite) angegebenen Kontaktadresse zu erreichen</p>
+	
+	<header class="w3-container w3-green w3-padding nlpkeheader">
+		<div class="w3-center">
+			
+			<h1>NLPKE</h1>
+			<button class="w3-btn w3-xlarge w3-light-green" onclick="document.getElementById('contactdetails').style.display = 'block'">Kontakt</button>
+
+			<button class="w3-btn w3-xlarge w3-light-green" onclick="window.location.href = 'https://github.com/nlpke'">GitHub Profil</button>
+		
+			<button class="w3-btn w3-xlarge w3-light-green" onclick="window.location.href = 'https://hackster.io/nlpke'">Hackster Profil</button>
+
+		</div>
+	</header>
+
+	
+
+
+	<div id="contactdetails" class="w3-modal">
+		<div class="w3-modal-content w3-card-8 w3-animate-top">
+			<header class="w3-container">
+				<span onclick="document.getElementById('contactdetails').style.display = 'none'" class="w3-button w3-display-topright">X</span>
+				<h4>Kontakt per E-Mail</h4>
+			</header>
+			<div class="w3-padding">
+				<p>Alle E-Mails müssen als Betreff "NLPKE-EMAIL" enthalten, um automatisierte Spam-Nachrichten auszuschließen. Nur E-Mails mit diesem Betreff (ohne Anführungszeichen) werden an mich weitergeleitet. Die Kontaktadresse lautet: <b>nlpke.contact@gmail.com</b></p>
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-center">
+		<h2>Projekte</h2>
+	</div>
+
+
+	<div class="w3-row-padding w3-center w3-margin-top">
+		<div class="w3-half">
+			<div class="w3-card-2 w3-padding" style="min-height: 350px;">
+				<h4>IoT-Box</h4>
+				<img src="img/iot-logo.png" class="w3-image">
+				<p>In meinem Jugend-Forscht Projekt beschäftige ich mich damit, wie man bestehende Geräte vernetzen kann. Dafür habe ich die IoT-Box entwickelt und beim Regionalwettbewerb in Herford einen 1. Platz im Bereich Arbeitswelt erzielt. Das Projekt werde ich daher Anfang April in Leverkusen beim Landeswettbewerb NRW vorstellen. Im April folgen dann hier weitere Informationen zur IoT-Box.</p>
+				<small>Stand: 03/2017</small>
 			</div>
 		</div>
 
-		<div class="w3-row">
-			<div class="w3-col s12">
-				<h1 style="text-align:center;">Weitere Projekte</h1>
-				<hr>
-				<p>In meinem Github Profil befindet sich eine Anleitung für den <b>DS18B20 Temperatursensor in Kombination mit einem Arduino</b>. Außerdem habe ich im Rahmen eines Praktikums bei der Technologiestiftung Berlin zahlreiche <b>Anleitungen für den Calliope-Minicomputer</b> entwickelt. Die Hauptanleitung und einige kleinere Projekte (mit grober Erläuterung) befinden sich auf meinem Github Profil. Drei detailliert erklärte Projekte befinden sich auf meinem Hackster.io Account (<a href="https://www.hackster.io/nlpke">https://hackster.io/nlpke</a>). Mein Github Profil befindet sich unter <a href="https://github.com/nlpke">https://github.com/nlpke</a>.</p>
+		<div class="w3-half">
+			<div class="w3-card-2 w3-padding" style="min-height: 350px;">
+				<h4>Calliope-Mini</h4>
+				<img src="img/mini.JPG" class="w3-image">
+				<p>In meinem Github Profil befinden sich mehrere Anleitungen für den Calliope-Mini Microcontroller, die im Rahmen eines Praktikums bei der Technologiestiftung Berlin entstanden sind. Die Hauptanleitung und einige kleinere Projekte (mit grober Erläuterung) befinden sich in meinem Github Profil. Drei detailliert erkläterte Projekte befinden sich bei Hackster.io.</p>
+				<button class="w3-btn w3-light-green" onclick="window.location.href = 'https://hackster.io/nlpke'">Zu den Beispielprojekten bei Hackster</button>
+				<button class="w3-btn w3-light-green" onclick="window.location.href = 'https://github.com/nlpke/Calliope-Mini-Tutorial/blob/master/Calliope_Tutorial/Calliope_TutorialV3.pdf'">Zur Anleitung</button>
+				<small>Stand: 03/2017</small>
 			</div>
 		</div>
-		
-		<div class="w3-col s12">
-			<hr>
-			<h1 style="text-align:center;">Kontakt per Mail</h1>
-			<hr>
-			<p>Alle E-Mails müssen als <b>Betreff "NLPKE-EMAIL"</b> enthalten, um automatisierte Spam-Nachrichten auszuschließen. Nur E-Mails mit diesem Betreff (ohne Anführungszeichen) werden an mich weitergeleitet. Die Kontaktadresse lautet:<b>nlpke.contact@gmail.com</b></p>
-		</div>
-		
+	</div>
 
-		<small>Letzte Akutalisierung: 18.2.2017 22:06:00</small>
-</body>
+
+
+	</body>
+</html>
