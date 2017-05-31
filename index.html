@@ -1,70 +1,58 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Aerial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
-		<title>nlpke</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
-		<meta charset="utf-8">
+		<title>nlpke.me</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
 
-	<header class="w3-container w3-green w3-padding nlpkeheader">
-		<div class="w3-center">
+				<!-- Header -->
+					<header id="header">
+						<h1>Nils Lüpke</h1>
+						<nav>
+							<ul>
+								<li><a href="https://twitter.com/nilsluepke" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/nlpke" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="https://hackster.io/nlpke" class="icon fa-user"><span class="label">Github</span></a></li>
+								<li><a href="mailto:mail@iot-box.net" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+						</nav>
 
-			<h1>NLPKE</h1>
-			<button class="w3-btn w3-xlarge w3-light-green" onclick="document.getElementById('contactdetails').style.display = 'block'">Kontakt</button>
+						<p>
+In meinem Jugend-Forscht Projekt beschäftige ich mich mit der Vernetzung von Haushaltsgeräten.
+Dafür habe ich die IoT-Box entwickelt, welche die Schnittstelle zwischen nicht-internetfähigen Geräten und dem Internet bildet.
+Mit meinem Projekt habe ich auf Regional- sowie auf Landesebene einen ersten Platz im Fachbereich Arbeitswelt erhalten.
+						<br>
+						<a class="icon fa-info" href="http://jufo.iot-box.net"> Weitere Informationen und Fotos</a>
+						</p>
 
-			<button class="w3-btn w3-xlarge w3-light-green" onclick="window.location.href = 'https://github.com/nlpke'">GitHub Profil</button>
-
-			<button class="w3-btn w3-xlarge w3-light-green" onclick="window.location.href = 'https://www.hackster.io/nlpke'">Hackster Profil</button>
-
-		</div>
-	</header>
-
-
+						<hr>
 
 
-	<div id="contactdetails" class="w3-modal">
-		<div class="w3-modal-content w3-card-8 w3-animate-top">
-			<header class="w3-container">
-				<span onclick="document.getElementById('contactdetails').style.display = 'none'" class="w3-button w3-display-topright">X</span>
-				<h4>Kontakt per E-Mail</h4>
-			</header>
-			<div class="w3-padding">
-				<p>E-Mail Adresse: <b><a href='mailto:mail@iot-box.net'>mail@iot-box.net</a></b></p>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span class="copyright">&copy; Nils Lüpke | Design von: <a href="http://html5up.net">HTML5 UP</a>, Design lizenziert unter <a href="https://creativecommons.org/licenses/by/3.0/">CC-BY 3.0</a>.</span>
+					</footer>
+
 			</div>
 		</div>
-	</div>
-
-	<div class="w3-center">
-		<h2>Projekte</h2>
-	</div>
-
-
-	<div class="w3-row-padding w3-center w3-margin-top">
-		<div class="w3-half">
-			<div class="w3-card-2 w3-padding" style="min-height: 350px;">
-				<h4>IoT-Box</h4>
-				<img src="img/iot-logo.png" class="w3-image">
-				<p>In meinem Jugend-Forscht Projekt beschäftige ich mich mit der Vernetzung von Haushaltsgeräten. Dafür habe ich die IoT-Box entwickelt, welche die Schnittstelle zwischen nicht-internetfähigen Geräten und dem Internet bildet. Mit meinem Projekt habe ich auf Regional- sowie auf Landesebene einen ersten Platz im Fachbereich Arbeitswelt erhalten. Beim Bundeswettbewerb Ende Mai in Erlangen werde ich die IoT-Box erneut vorstellen.</p>
-				<small>Stand: 04/2017</small>
-			</div>
-		</div>
-
-		<div class="w3-half">
-			<div class="w3-card-2 w3-padding" style="min-height: 350px;">
-				<h4>Calliope-Mini</h4>
-				<img src="img/mini.JPG" class="w3-image">
-				<p>In meinem Github Profil befinden sich mehrere Anleitungen für den Calliope-Mini Microcontroller, die im Rahmen eines Praktikums bei der Technologiestiftung Berlin entstanden sind. Die Hauptanleitung und einige kleinere Projekte (mit grober Erläuterung) befinden sich in meinem Github Profil. Drei detailliert erklärte Projekte befinden sich bei Hackster.io.</p>
-				<button class="w3-btn w3-light-green" onclick="window.location.href = https://www.hackster.io/nlpke'">Zu den Beispielprojekten bei Hackster</button>
-				<button class="w3-btn w3-light-green" onclick="window.location.href = 'https://github.com/nlpke/Calliope-Mini-Tutorial/blob/master/Calliope_Tutorial/Calliope_TutorialV3.pdf'">Zur Anleitung</button>
-				<br>
-				<small>Stand: 03/2017</small>
-			</div>
-		</div>
-	</div>
-
-
-
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
